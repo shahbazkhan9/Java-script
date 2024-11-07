@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porject-1 Color Changes</title>
+     <style>
+        body{
+            background-color: #212121;
+
+            color: white;
+            
+        }
+
+        button:hover{
+             cursor: pointer;
+        }
+        button{
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="parent">
+       <button id="cadetblue">first</button>
+       <button id="cornflowerblue">second</button>
+       <button id="cyan">Third</button>
+       <button id="aquamarine">fourth</button>
+       <button id="grey">fifth</button>
+    </div>
+</body>
+  <script>
+        const body = document.querySelector('body');
+        console.log(body);
+        const all = document.querySelectorAll('button');
+         console.log(all);
+        all.forEach((list)=>{
+         console.log(list);
+         list.addEventListener('click', (e)=>{
+            
+             if(e.target.id == "cadetblue"){
+                 body.style.backgroundColor = e.target.id;
+             }
+             if(e.target.id == "cornflowerblue"){
+                 body.style.backgroundColor = e.target.id;
+             }
+             if(e.target.id == "cyan"){
+                 body.style.backgroundColor = e.target.id;
+             }
+             if(e.target.id == "aquamarine"){
+                 body.style.backgroundColor = e.target.id;
+             }
+             if(e.target.id === "grey"){
+                 body.style.backgroundColor = e.target.id;
+             }
+         })
+     })
+  </script>
+</html>
